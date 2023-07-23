@@ -10,7 +10,7 @@ function adicionaritem(itemText) {
     item.className = 'list-group-item d-flex justify-content-between';
     item.innerHTML = `
         <div class="form-check d-flex align-items-center" style="width: 87%">
-            <input type="checkbox" class="form-check-input" onchange="habilitaritem(this)">
+            <input type="checkbox" class="form-check-input to-do-check" onchange="habilitaritem()">
             <input type="text" class="form-control item-input" value="${itemText}" disabled>
         </div>
         <div class="d-flex">
@@ -42,4 +42,16 @@ function additem() {
         document.querySelector('#item').value = '';
         document.querySelector('#item').placeholder = '';
     }
+}
+
+// marcar como concluida ou não
+
+function habilitaritem() {
+    document.querySelectorAll('.to-do-check').forEach((checkBox) => {
+        if (checkBox.checked) {
+            checkBox.parentNode.parentNode.style.background = 'green';
+        } else {
+            checkBox.parentNode.parentNode.style.background = '';
+        }
+    })
 }
