@@ -30,15 +30,17 @@ function adicionaritem(itemText) {
 // Faz a adição da mensagem na lista
 
 function additem() {
-    let caixaDeitens = document.querySelector('#item').value;
+    let caixaDeitens = document.querySelector('#item');
+    let caixaDeitensTeste = caixaDeitens.value.trim();
 
-    if (caixaDeitens === '') {
-        document.querySelector('#item').placeholder = 'item inválida';
+    if (caixaDeitensTeste === '') {
+        caixaDeitens.value = '';
+        document.querySelector('#item').placeholder = 'item inválido';
     } else {
-        adicionaritem(caixaDeitens);
+        adicionaritem(caixaDeitensTeste);
 
-        document.querySelector('#item').value = '';
-        document.querySelector('#item').placeholder = '';
+        caixaDeitens.value = '';
+        caixaDeitens.placeholder = '';
     }
 }
 
@@ -63,7 +65,13 @@ function esvaziarLista() {
 
 // editar mensagem
 
-// function editaritem(btn) {
-//     let inputItem = btn.parentNode.querySelector('.item-input');
-//     inputItem.
-// }
+function editaritem(btn) {
+    let inputItem = btn.parentNode.querySelector('.item-input');
+    inputItem.disabled = !inputItem.disabled;
+
+    // if (checkBox.checked) {
+    //     checkBox.parentNode.parentNode.style.background = 'green';
+    // } else {
+    //     checkBox.parentNode.parentNode.style.background = '';
+    // }
+}
