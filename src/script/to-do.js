@@ -9,11 +9,9 @@ function adicionaritem(itemText) {
     item.id = 'listed';
     item.className = 'list-group-item d-flex justify-content-between';
     item.innerHTML = `
-        <div class="form-check d-flex align-items-center" style="width: 87%">
+        <div class="form-check d-flex align-items-center justify-content-between" style="width: 100%">
             <input type="checkbox" class="form-check-input to-do-check" onchange="habilitaritem()">
             <input type="text" class="form-control item-input" value="${itemText}" disabled>
-        </div>
-        <div class="d-flex">
             <button onclick="editaritem(this)" class="btn btn-secondary btn-sm">Editar</button>
             <button onclick="removeritem(this)" class="btn btn-danger btn-sm">Remover</button>
         </div>
@@ -54,4 +52,18 @@ function habilitaritem() {
             checkBox.parentNode.parentNode.style.background = '';
         }
     })
+}
+
+// esvaziar lista
+
+function esvaziarLista() {
+    document.querySelector('.list-group').innerHTML = ''
+    document.querySelector('#num').innerHTML = `0 itens`;
+}
+
+// editar mensagem
+
+function editaritem(btn) {
+    let inputItem = btn.parentNode.querySelector('.item-input');
+    inputItem.
 }
