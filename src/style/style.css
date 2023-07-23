@@ -6,6 +6,11 @@
     user-select: none;
 }
 
+/* body {
+    background: url('https://picsum.photos/1200');
+    background-size: cover;
+} */
+
 .tabs {
     width: 220px;
     height: 100%;
@@ -29,20 +34,20 @@
 }
 
 .tab-content-container {
+    height: 100%;
     margin-left: 220px;
+    backdrop-filter: blur(100px);
     padding: 10px;
 }
 
 .tab-content {
     display: none;
-    /* padding: 10px; */
 }
 
 .tab-content.active {
     display: block;
 }
 
-/* Estilos para telas menores (até 600px) */
 @media (max-width: 720px) {
     .tabs {
         width: 100%;
@@ -67,7 +72,6 @@
         padding: 5px;
     }
 
-    /* Exibir o "hamburguer menu" */
     #menu-checkbox {
         display: none;
     }
@@ -84,7 +88,6 @@
         font-weight: bold;
     }
 
-    /* Mostrar as "tabs" quando a checkbox estiver marcada */
     #menu-checkbox:checked ~ .tabs {
         display: grid;
     }

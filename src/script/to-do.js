@@ -67,11 +67,10 @@ function esvaziarLista() {
 
 function editaritem(btn) {
     let inputItem = btn.parentNode.querySelector('.item-input');
-    inputItem.disabled = !inputItem.disabled;
 
-    // if (checkBox.checked) {
-    //     checkBox.parentNode.parentNode.style.background = 'green';
-    // } else {
-    //     checkBox.parentNode.parentNode.style.background = '';
-    // }
+    if (inputItem.value.trim() == "") {
+        alert('item invalido!')
+    } else {
+        inputItem.disabled = !inputItem.disabled;
+    }
 }
