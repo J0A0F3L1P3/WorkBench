@@ -63,7 +63,7 @@ function esvaziarLista() {
 
 // editar mensagem
 
-function editaritem(btn) {
-    let inputItem = btn.parentNode.querySelector('.item-input');
-    inputItem.
-}
+// function editaritem(btn) {
+//     let inputItem = btn.parentNode.querySelector('.item-input');
+//     inputItem.
+// }
