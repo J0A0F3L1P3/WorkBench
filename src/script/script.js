@@ -6,7 +6,7 @@ function showTab(tabIndex, tab) {
 
     const aba = document.querySelectorAll('.tab');
     aba.forEach((tab) => {
-        tab.style.background = '#f1f1f1';
+        tab.style.background = 'rgba(700, 700, 700, 0.5)';
     });
 
     const selectedTabContent = document.getElementById(`tab${tabIndex}`);

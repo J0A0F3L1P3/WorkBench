@@ -6,11 +6,6 @@
     user-select: none;
 }
 
-/* body {
-    background: url('https://picsum.photos/1200');
-    background-size: cover;
-} */
-
 .tabs {
     width: 220px;
     height: 100%;
@@ -19,8 +14,10 @@
     position: fixed;
     z-index: 9999;
     top: 0px;
-    background-color: #f1f1f1;
+    background: url('../img/bg-menu.jpg');
     display: flex;
+    background-size: cover;
+    background-position: center center;
     justify-content: center;
     flex-direction: column;
 }
@@ -28,7 +25,8 @@
 .tab {
     cursor: pointer;
     padding: 10px;
-    background-color: #f1f1f1;
+    background: rgba(700, 700, 700, 0.5);
+    backdrop-filter: blur(100px);
     border-radius: 20px 0px 0px 20px;
     margin-bottom: 5px;
 }
@@ -42,10 +40,6 @@
 
 .tab-content {
     display: none;
-}
-
-.tab-content.active {
-    display: block;
 }
 
 @media (max-width: 720px) {
@@ -88,7 +82,7 @@
         font-weight: bold;
     }
 
-    #menu-checkbox:checked ~ .tabs {
+    #menu-checkbox:checked~.tabs {
         display: grid;
     }
 }
