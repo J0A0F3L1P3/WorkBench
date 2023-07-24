@@ -11,7 +11,7 @@ function adicionaritem(itemText) {
     item.innerHTML = `
         <div class="form-check d-flex align-items-center justify-content-between" style="width: 100%">
             <input type="checkbox" class="form-check-input to-do-check" onchange="habilitaritem()">
-            <input type="text" class="form-control item-input" value="${itemText}" disabled>
+            <input type="text" class="form-control item-input-to-do" value="${itemText}" disabled>
             <button onclick="editaritem(this)" class="btn btn-secondary btn-sm">Editar</button>
             <button onclick="removeritem(this)" class="btn btn-danger btn-sm">Remover</button>
         </div>
@@ -44,7 +44,7 @@ function additem() {
     }
 }
 
-// marcar como concluida ou não
+// marcação
 
 function habilitaritem() {
     document.querySelectorAll('.to-do-check').forEach((checkBox) => {
@@ -66,7 +66,7 @@ function esvaziarLista() {
 // editar mensagem
 
 function editaritem(btn) {
-    let inputItem = btn.parentNode.querySelector('.item-input');
+    let inputItem = btn.parentNode.querySelector('.item-input-to-do');
 
     if (inputItem.value.trim() == "") {
         alert('item invalido!')
@@ -74,3 +74,42 @@ function editaritem(btn) {
         inputItem.disabled = !inputItem.disabled;
     }
 }
+
+// remover mensagem
+
+function removeritem(btn) {
+    let element = btn.parentNode.parentNode;
+    element.remove();
+}
+
+// compartilhar no whatsapp
+
+
+function compartilharWhatsApp() {
+    let inputItems = document.querySelectorAll('.item-input-to-do');
+    let message = '';
+
+    if (inputItems.length > 0) {
+
+        inputItems.forEach((items) => {
+            let checkBox = items.parentNode.querySelector('.to-do-check');
+            if (checkBox.checked) {
+                message += `[x] `;
+            } else {
+                message += `[  ] `;
+            }
+
+            message += items.value + `%0A`;
+        })
+
+        let urlWhatsApp = `https://api.whatsapp.com/send?text=${message}`;
+        window.open(urlWhatsApp, '_blank');
+
+    } else {
+        alert("Ops, parece que você esqueceu de digitar alguma coisa...");
+    }
+}
+
+// function ordenaritens() {
+//     let list = document
+// }
