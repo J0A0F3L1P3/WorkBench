@@ -80,6 +80,15 @@ function editaritem(btn) {
 function removeritem(btn) {
     let element = btn.parentNode.parentNode;
     element.remove();
+
+    let cont = document.querySelector('#num');
+    let contador = parseInt(cont.innerHTML);
+    --contador;
+    if (contador !== 1) {
+        cont.innerHTML = `${contador} itens`;
+    } else {
+        cont.innerHTML = `${contador} item`;
+    }
 }
 
 // compartilhar no whatsapp
