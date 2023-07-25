@@ -17,5 +17,5 @@ function showTab(tabIndex, tab) {
 
 document.querySelector('.checked').style.background = '#fff';
 
-const selectedTabContent = document.getElementById(`tab1`);
+const selectedTabContent = document.getElementById(`tab2`);
 selectedTabContent.style.display = 'block';
