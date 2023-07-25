@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/calculadora.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>WorkBench</title>
@@ -53,7 +54,42 @@
         <div class="tab-content" id="tab2">
             <h2>Projeto Calculadora</h2>
             <div class="container">
-                .diplay
+                <input type="text" class="display form-control h-50px" disabled>
+                <div class="row teclado-calc">
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('7')">7</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('8')">8</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('9')">9</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('+')">+</button>
+
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('4')">4</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('5')">5</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('6')">6</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('-')">-</button>
+
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('1')">1</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('2')">2</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('3')">3</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('*')">*</button>
+
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3" onclick="limpar()">C</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('0')">0</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3" onclick="calcular()">=</button>
+                    <button class="btn-calc bg-light btn-lg btn col-3 col-sm-3 col-md-3"
+                        onclick="addCalc('/')">/</button>
+                </div>
             </div>
         </div>
         <div class="tab-content" id="tab3">
@@ -108,6 +144,7 @@
 
     <script src="src/script/script.js"></script>
     <script src="src/script/to-do.js"></script>
+    <script src="src/script/calculadora.js"></script>
 </body>
 
 </html>

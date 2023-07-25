@@ -41,10 +41,7 @@
 }
 
 .box-shadow {
-    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
-    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-
+    padding: 10px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -71,11 +68,10 @@
         display: grid;
         padding-top: 40px;
         grid-template-columns: repeat(3, 1fr);
-        transition: .5s;
     }
 
     #menu-checkbox:checked~.tabs {
-        height: 180px;
+        height: auto;
         transition: 0.5s;
     }
 

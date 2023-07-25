@@ -93,7 +93,6 @@ function removeritem(btn) {
 
 // compartilhar no whatsapp
 
-
 function compartilharWhatsApp() {
     let inputItems = document.querySelectorAll('.item-input-to-do');
     let message = '';
@@ -118,6 +117,15 @@ function compartilharWhatsApp() {
         alert("Ops, parece que você esqueceu de digitar alguma coisa...");
     }
 }
+
+document.querySelector('#item').addEventListener('keypress', function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        additem();
+    }
+})
+
+// document.addEventListener('keypress', (event) => console.log(event));
 
 // function ordenaritens() {
 //     let list = document
