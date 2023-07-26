@@ -1,3 +1,6 @@
+document.querySelector('#quantiaEmReal').addEventListener('input', converterMoeda);
+document.querySelector('#moeda').addEventListener('change', converterMoeda);
+
 function converterMoeda() {
     let quantiaEmReal = parseFloat(document.querySelector('#quantiaEmReal').value);
     let moeda = document.querySelector('#moeda').value;
@@ -19,8 +22,3 @@ function converterMoeda() {
 
     document.querySelector('#quantiaConvertida').value = quantiaEmReal.toFixed(2);
 }
-
-document.querySelector('#quantiaEmReal').addEventListener('input', converterMoeda);
-document.querySelector('#moeda').addEventListener('change', converterMoeda);
-
-converterMoeda();
