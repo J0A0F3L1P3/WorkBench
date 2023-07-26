@@ -12,7 +12,7 @@ function limpar() {
 
 function calcular() {
   try {
-    const resultado = eval(expression);
+    let resultado = eval(expression);
     expression = resultado.toString();
     atualizarDisplay();
   } catch (error) {
@@ -22,5 +22,5 @@ function calcular() {
 }
 
 function atualizarDisplay() {
-  document.querySelector(".display").value = expression;
+  document.querySelector("#display").value = expression;
 }

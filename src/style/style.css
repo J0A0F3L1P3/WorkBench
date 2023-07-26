@@ -6,6 +6,15 @@
     user-select: none;
 }
 
+@font-face {
+    font-family: 'digital-7';
+    src: url('../fonts/digital-7.ttf')
+}
+
+.clock {
+    font-family: 'digital-7', Arial, sans-serif;
+}
+
 .tabs {
     width: 220px;
     height: 100%;

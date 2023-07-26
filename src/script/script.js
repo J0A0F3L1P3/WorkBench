@@ -1,15 +1,15 @@
 function showTab(tabIndex, tab) {
-    const tabContents = document.querySelectorAll('.tab-content');
+    let tabContents = document.querySelectorAll('.tab-content');
     tabContents.forEach(tabContent => {
         tabContent.style.display = 'none';
     });
 
-    const aba = document.querySelectorAll('.tab');
+    let aba = document.querySelectorAll('.tab');
     aba.forEach((tab) => {
         tab.style.background = 'rgba(700, 700, 700, 0.5)';
     });
 
-    const selectedTabContent = document.getElementById(`tab${tabIndex}`);
+    let selectedTabContent = document.getElementById(`tab${tabIndex}`);
     selectedTabContent.style.display = 'block';
 
     tab.style.background = '#fff';
@@ -17,5 +17,5 @@ function showTab(tabIndex, tab) {
 
 document.querySelector('.checked').style.background = '#fff';
 
-const selectedTabContent = document.getElementById(`tab2`);
+let selectedTabContent = document.getElementById(`tab4`);
 selectedTabContent.style.display = 'block';
