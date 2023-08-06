@@ -32,18 +32,6 @@ A sexta aba é o clássico Jogo da Velha, onde dois jogadores podem competir ent
 
 A sétima aba está em desenvolvimento e será responsável por gerar senhas aleatórias e seguras.
 
-### 8. Quiz / Questionário (Em Desenvolvimento)
-
-A oitava aba também está em desenvolvimento e será um projeto de questionário ou quiz com perguntas e respostas interativas.
-
-### 9. Temporizador Pomodoro (Em Desenvolvimento)
-
-A nona aba está em desenvolvimento e não possui funcionalidade implementada. Será um temporizador baseado na técnica Pomodoro para gerenciar o tempo de trabalho e descanso.
-
-### 10. Contador de Calorias (Em Desenvolvimento)
-
-A décima e última aba também está em desenvolvimento e será responsável por permitir ao usuário rastrear e somar as calorias consumidas em suas refeições diárias.
-
 ## Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando tecnologias web padrão, como HTML, CSS e JavaScript. O design responsivo e moderno é baseado no framework Bootstrap, que facilita a criação de interfaces consistentes e amigáveis.
