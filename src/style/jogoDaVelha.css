@@ -1,0 +1,106 @@
+.jogoDaVelha {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 50px;
+    background-color: #fff;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    overflow: hidden;
+}
+
+.dashBoard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    cursor: pointer;
+    color: #333;
+}
+
+.cell:hover {
+    background-color: #f9f9f9;
+}
+
+.cell.X {
+    color: #f44336;
+}
+
+.cell.O {
+    color: #2196f3;
+}
+
+.score {
+    font-size: 24px;
+    text-align: center;
+}
+
+#player1 {
+    color: #f44336;
+}
+
+#player2 {
+    color: #2196f3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 850px) {
+    .board {
+        height: 50vh;
+        width: 50vh;
+    }
+    .jogoDaVelha {
+        height: 100vh;
+        width: 100vw;
+    }
+    .jogoDaVelha {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .cell {
+        font-size: 30vw;
+    }
+    .board {
+        height: 100vw;
+        width: 100vw;
+    }
+}
