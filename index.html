@@ -10,25 +10,32 @@
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>WorkBench</title>
 </head>
 
 <body>
     <input type="checkbox" id="menu-checkbox">
-    <label class="hamburguer" for="menu-checkbox">☰ Menu</label>
 
-    <div class="tabs">
-        <div class="tab" onclick="showTab(1, this)">To-Do List</div>
-        <div class="tab" onclick="showTab(2, this)">Calculadora</div>
-        <div class="tab" onclick="showTab(3, this)">Relógio Digital</div>
+    <div class="tabs bg-dark">
+        <div>
+            <label class="hamb" for="menu-checkbox">☰</label>
+        </div>
 
-        <div class="tab" onclick="showTab(4, this)">Conversor de Moedas</div>
-        <div class="tab" onclick="showTab(5, this)">Galeria de Imagens</div>
-        <div class="tab checked" onclick="showTab(6, this)">Jogo da Velha</div>
-
-        <div class="tab" onclick="showTab(7, this)">Gerador de Senhas</div>
-        <div class="tab" onclick="showTab(8, this)">Quiz / Questionário</div>
-        <div class="tab" onclick="showTab(9, this)">Temporizador Pomodoro</div>
+        <div>
+            <div class="tab" onclick="showTab(1, this)"><i class="fa-solid fa-list"></i> To-Do List</div>
+            <div class="tab" onclick="showTab(2, this)"><i class="fa-solid fa-calculator"></i> Calculadora</div>
+            <div class="tab" onclick="showTab(3, this)"><i class="fa-solid fa-clock"></i> Relógio Digital</div>
+    
+            <div class="tab" onclick="showTab(4, this)"><i class="fa-solid fa-coins"></i> Conversor</div>
+            <div class="tab" onclick="showTab(5, this)"><i class="fa-solid fa-image"></i> Galeria</div>
+            <div class="tab" onclick="showTab(6, this)"><i class="fa-solid fa-hashtag"></i> Jogo da Velha</div>
+    
+            <div class="tab checked" onclick="showTab(7, this)"><i class="fa-solid fa"></i> project</div>
+            <div class="tab" onclick="showTab(8, this)"><i class="fa-solid fa-"></i> project</div>
+            <div class="tab" onclick="showTab(9, this)"><i class="fa-solid fa"></i> project</div>
+        </div>
+        <div></div>
     </div>
 
     <div class="tab-content-container">
@@ -136,10 +143,8 @@
         </div>
         <div class="tab-content" id="tab6">
             <h2>Projeto Jogo da Velha</h2>
-            <div class="jogoDaVelha container box-shadow">
+            <div class="jogoDaVelha container box-shadow justify-content-center">
                 <div class="dashBoard">
-                    <h1>Jogo da Velha</h1>
-
                     <div class="score">
                         <h2><span id="player1">JOGADOR X</span>: <span id="scorePlayer1">0</span></h2>
                         <br>
@@ -181,12 +186,6 @@
             <h2>Projeto Temporizador Pomodoro</h2>
             <p>
                 Implemente aqui o conteúdo do projeto Temporizador Pomodoro.
-            </p>
-        </div>
-        <div class="tab-content" id="tab10">
-            <h2>Projeto Contador de Calorias</h2>
-            <p>
-                Implemente aqui o conteúdo do projeto Contador de Calorias.
             </p>
         </div>
     </div>
