@@ -1,8 +1,5 @@
 .jogoDaVelha {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 30px;
+    display: flex;
 }
 
 .board {
@@ -14,12 +11,15 @@
     background: #e0e0e0;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     overflow: hidden;
+    height: 320px;
+    width: 320px;
 }
 
 .dashBoard{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: 40px;
 }
 
 .cell {
@@ -80,7 +80,7 @@
     background-color: #45a049;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
     .board {
         height: 50vh;
         width: 50vh;
@@ -90,17 +90,8 @@
         width: 100vw;
     }
     .jogoDaVelha {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 1fr 1fr;
-    }
-}
-
-@media (max-width: 375px) {
-    .cell {
-        font-size: 30vw;
-    }
-    .board {
-        height: 100vw;
-        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

@@ -136,10 +136,8 @@
         </div>
         <div class="tab-content" id="tab6">
             <h2>Projeto Jogo da Velha</h2>
-            <div class="jogoDaVelha container box-shadow">
+            <div class="jogoDaVelha container box-shadow justify-content-center">
                 <div class="dashBoard">
-                    <h1>Jogo da Velha</h1>
-
                     <div class="score">
                         <h2><span id="player1">JOGADOR X</span>: <span id="scorePlayer1">0</span></h2>
                         <br>
@@ -166,10 +164,21 @@
             </div>
         </div>
         <div class="tab-content" id="tab7">
-            <h2>Projeto Gerador de Senhas</h2>
-            <p>
-                Implemente aqui o conteúdo do projeto Gerador de Senhas.
-            </p>
+            <h2> Projeto Criptógrafia</h2>
+            <div class="container card box-shadow">
+                <div class="mb-3">
+                    <label for="originalText" class="form-label">Texto:</label>
+                    <textarea class="form-control" id="originalText" placeholder="Escreva o texto a ser criptografado." rows="3"></textarea>
+                </div>
+                <div class="btn-group w-25">
+                    <button class="btn btn-primary" onclick="encrypt()">Criptografar</button>
+                    <button class="btn btn-secondary" onclick="decrypt()">Descriptografar</button>
+                </div>
+                <div class="mt-3">
+                    <label for="resultText" class="form-label">Resultado:</label>
+                    <textarea class="form-control" id="resultText" rows="3" readonly></textarea>
+                </div>
+            </div>
         </div>
         <div class="tab-content" id="tab8">
             <h2>Projeto Quiz / Questionário</h2>
@@ -193,6 +202,7 @@
 
     <script src="src/script/script.js"></script>
 
+    <script src="src/script/cripto.js"></script>
     <script src="src/script/jogoVelha.js"></script>
     <script src="src/script/galerImage.js"></script>
     <script src="src/script/to-do.js"></script>
