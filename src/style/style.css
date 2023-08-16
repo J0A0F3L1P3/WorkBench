@@ -38,11 +38,15 @@ body {
     transition: 0.5s;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 .tab i {
     margin-right: 5px;
+}
+
+.tab p {
+    display: none;
 }
 
 .tab-content-container {
@@ -87,6 +91,10 @@ body {
     width: 220px;
     border-radius: 20px 0px 0px 20px;
     transition: 0.5s;
+}
+
+#menu-checkbox:checked~.tabs .tab p{
+    display: block;
 }
 
 @media (max-width: 720px) {
