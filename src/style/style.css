@@ -72,10 +72,10 @@ body {
     justify-content: end;
 }
 
-.hamb {
+.hamb i{
     color: #f1f1f1;
-    font-size: 40px;
-    padding: 0px 10px;
+    font-size: 30px;
+    padding: 10px 10px;
 }
 
 #menu-checkbox {
