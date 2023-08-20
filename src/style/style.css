@@ -69,7 +69,7 @@ body {
 .tabs > div:first-child {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 .hamb i{
