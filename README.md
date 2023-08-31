@@ -28,14 +28,14 @@ A quinta aba é uma galeria de imagens que permite ao usuário adicionar imagens
 
 A sexta aba é o clássico Jogo da Velha, onde dois jogadores podem competir entre si. A interface exibe o placar de cada jogador e botões para reiniciar o jogo ou resetar o placar.
 
-### 7. Gerador de Senhas (Em Desenvolvimento)
+### 7. Gerador de Senhas
 
-A sétima aba está em desenvolvimento e será responsável por gerar senhas aleatórias e seguras.
+A sétima aba está em é responsável por criptografar mensagens. O sistema se baseia na cifra de cesar, onde é somado 3 aos caracteres (A == D).
 
 ## Tecnologias Utilizadas
 
-O projeto foi desenvolvido utilizando tecnologias web padrão, como HTML, CSS e JavaScript. O design responsivo e moderno é baseado no framework Bootstrap, que facilita a criação de interfaces consistentes e amigáveis.
+O projeto foi desenvolvido utilizando tecnologias web padrão, como HTML, CSS e JavaScript. O design é baseado no framework Bootstrap.
 
 ## Conclusão
 
-O WorkBench é um projeto multifuncional com uma variedade de funcionalidades úteis, que pode ser útil tanto para fins pessoais quanto profissionais. Ainda está em desenvolvimento, com planos para adicionar mais recursos e aprimorar a experiência do usuário. Sinta-se à vontade para contribuir, sugerir melhorias ou utilizar o projeto em suas próprias aplicações.
+O WorkBench é um projeto multifuncional com uma variedade de funcionalidades úteis, tanto para fins pessoais quanto profissionais. Ainda está em desenvolvimento, com planos para adicionar mais recursos e aprimorar a experiência do usuário.
