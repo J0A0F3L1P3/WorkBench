@@ -60,7 +60,7 @@ body {
 }
 
 .box-shadow {
-    width: 70vw;
+    /* width: 70vw; */
     padding: 10px;
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
