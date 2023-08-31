@@ -30,7 +30,7 @@ A sexta aba é o clássico Jogo da Velha, onde dois jogadores podem competir ent
 
 ### 7. Gerador de Senhas
 
-A sétima aba está em desenvolvimento e será responsável por gerar senhas aleatórias e seguras.
+A sétima aba está em é responsável por criptografar mensagens. O sistema se baseia na cifra de cesar, onde é somado 3 aos caracteres (A == D).
 
 ## Tecnologias Utilizadas
 
