@@ -29,12 +29,13 @@ body {
 
 .tab {
     height: 40px;
-    width: 50px;
+    /* width: 50px; */
     cursor: pointer;
     padding: 10px;
     background: rgba(700, 700, 700, 0.5);
     margin-bottom: 5px;
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
+    /* border-radius: 20px; */
     transition: 0.5s;
     overflow: hidden;
     display: flex;
@@ -89,7 +90,7 @@ body {
 
 #menu-checkbox:checked~.tabs .tab {
     width: 220px;
-    border-radius: 20px 0px 0px 20px;
+    /* border-radius: 20px 0px 0px 20px; */
     transition: 0.5s;
 }
 

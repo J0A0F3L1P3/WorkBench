@@ -22,6 +22,8 @@ columns.forEach(column => {
 
 function dragOver(e) {
     e.preventDefault();
+    let task = document.querySelector('.dragging');
+    this.appendChild('<div class="card"></div>');
 }
 
 function drop() {
