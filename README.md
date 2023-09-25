@@ -30,7 +30,15 @@ A sexta aba é o clássico Jogo da Velha, onde dois jogadores podem competir ent
 
 ### 7. Gerador de Senhas
 
-A sétima aba está em é responsável por criptografar mensagens. O sistema se baseia na cifra de cesar, onde é somado 3 aos caracteres (A == D).
+A sétima aba é responsável por criptografar mensagens. O sistema se baseia na cifra de cesar, onde é somado 3 aos caracteres (A == D).
+
+### 8. Kanban
+
+A oitava aba é responsável por organizar as ativadas em a fazer, em progresso e feito. O sistema se baseia na função draggable, que permite arrastar e anexar componentes.
+
+### 9. Bloco de Notas
+
+Em desenvolvimento.
 
 ## Tecnologias Utilizadas
 
